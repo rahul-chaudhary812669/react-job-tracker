@@ -80,7 +80,29 @@ Highlights companies receiving the highest number of applications.
 🎯 Offer Success Rate
 Calculates the percentage of applications that resulted in an offer.
 
-📁 Project Structure
+💾 Data Persistence
+The application uses the browser's Local Storage API for client-side data persistence.
+
+This means:
+
+Application data survives browser refreshes
+No backend server is required
+No external database is required
+The application can work entirely offline after loading
+User data remains stored within the browser
+Data Flow
+User Action
+     ↓
+React State
+     ↓
+Application Data
+     ↓
+Local Storage
+     ↓
+Persisted Browser Data
+When the application loads, stored data is retrieved from Local Storage and restored into the application state.
+
+Project Structure
 job-tracker/
 │
 ├── public/
@@ -124,3 +146,10 @@ Component composition
 Props
 Controlled forms
 Conditional rendering
+Data Management
+CRUD operations
+State management
+Array manipulation
+Data transformation
+Local Storage integration
+Persistent client-side state
