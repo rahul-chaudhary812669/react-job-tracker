@@ -1,16 +1,126 @@
-# React + Vite
+ 📌 Overview
+Managing multiple job applications across different companies can quickly become difficult. Important details such as application dates, current status, deadlines, interview stages, and job links can easily get scattered across notes and spreadsheets.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Job Tracker Dashboard provides a centralized workspace where users can record, manage, search, filter, and analyze their job applications.
 
-Currently, two official plugins are available:
+The application is built as a client-side Single Page Application (SPA) using React and Vite, with application data persisted using the browser's Local Storage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+No backend or database is required.
 
-## React Compiler
+🎯 The application allows users to:
+Add and manage job applications
+Track application progress
+Update application statuses
+Record application dates and deadlines
+Store job links and notes
+Search applications quickly
+Filter applications by status
+Sort applications
+Navigate through applications using pagination
+Analyze job-search activity through interactive charts
+Persist application data across browser refreshes
+✨ Key Features
+📋 Application Management
+Create and manage job applications from a centralized dashboard.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+➕ Add new applications
+✏️ Edit existing applications
+🗑️ Delete applications
+🏢 Track company names
+💼 Track job roles
+🔗 Store application/job links
+📝 Add notes and additional information
+📅 Record application dates
+⏰ Set application deadlines
+🔎 Search & Filtering
+Quickly find relevant applications using smart controls.
 
-## Expanding the ESLint configuration
+Search by company name
+Search by job role
+Filter by application status
+Combine search and filtering for faster navigation
+Supported statuses:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🟦 Applied
+🟨 Interview
+🟩 Offer
+🟥 Rejected
+↕️ Sorting
+Applications can be organized using multiple sorting options:
+
+Newest First
+Oldest First
+Company A–Z
+This makes it easier to prioritize recent applications and locate companies quickly.
+
+📄 Pagination
+The application uses client-side pagination to keep the dashboard clean and manageable.
+
+10 applications per page
+Previous/Next navigation
+Automatically adapts to filtered results
+📊 Analytics Dashboard
+The application includes a dedicated analytics dashboard that transforms application data into useful visual insights.
+
+📈 Interactive Visualizations
+Built using Recharts.
+
+🥧 Status Distribution
+A pie chart showing the proportion of applications across different statuses.
+
+📊 Status Comparison
+A bar chart comparing the number of applications in each stage.
+
+📈 Monthly Application Trend
+A line chart showing application activity over time.
+
+🏢 Top Companies
+Highlights companies receiving the highest number of applications.
+
+🎯 Offer Success Rate
+Calculates the percentage of applications that resulted in an offer.
+
+📁 Project Structure
+job-tracker/
+│
+├── public/
+│   └── _redirects
+│
+├── src/
+│   │
+│   ├── components/
+│   │   ├── JobForm.jsx
+│   │   ├── JobItem.jsx
+│   │   ├── JobList.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Stats.jsx
+│   │
+│   ├── pages/
+│   │   └── Analytics.jsx
+│   │
+│   ├── styles/
+│   │   └── app.css
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+
+🧠 Core Concepts Demonstrated
+This project demonstrates practical frontend development concepts including:
+
+React
+Functional components
+React Hooks
+useState
+useEffect
+Component composition
+Props
+Controlled forms
+Conditional rendering
