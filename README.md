@@ -59,39 +59,6 @@ Supported statuses:
 - 🟥 Rejected
 
 ---
-job-tracker/
-│
-├── public/
-│   └── _redirects
-│
-├── src/
-│   │
-│   ├── components/
-│   │   ├── JobForm.jsx
-│   │   ├── JobItem.jsx
-│   │   ├── JobList.jsx
-│   │   ├── Navbar.jsx
-│   │   └── Stats.jsx
-│   │
-│   ├── pages/
-│   │   └── Analytics.jsx
-│   │
-│   ├── styles/
-│   │   └── app.css
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── README.md
-└── vite.config.js
-
-
----
 
 ## 🧠 Core Concepts Demonstrated
 
@@ -107,15 +74,6 @@ This project demonstrates practical frontend development concepts including:
 - Props
 - Controlled forms
 - Conditional rendering
-
-### Data Management
-
-- CRUD operations
-- State management
-- Array manipulation
-- Data transformation
-- Local Storage integration
-- Persistent client-side state
 
 ### User Interaction
 
