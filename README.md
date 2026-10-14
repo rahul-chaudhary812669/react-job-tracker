@@ -89,7 +89,7 @@ job-tracker/
 ├── package-lock.json
 ├── README.md
 └── vite.config.js
-```
+
 
 ---
 
